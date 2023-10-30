@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ "$1" = "-in" ]; then
+  powershell.exe '$Input | Set-Clipboard'
+else
+  powershell.exe Get-Clipboard
+fi

@@ -1,0 +1,16 @@
+# Ignore everything
+/*
+
+# But not these files...
+!.gitignore
+!.xonshrc
+!.bashrc
+
+# Or these folders...
+!.config/
+!.local/
+.local/*
+!.local/bin/
+
+# But still ignore __pycache__ folders everywhere...
+**/__pycache__/

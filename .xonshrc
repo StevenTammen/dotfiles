@@ -1,0 +1,42 @@
+[$PATH.remove(path) for path in $PATH.paths if path.startswith("/mnt/c/")]
+$PATH.add('/home/steven/.local/bin')
+$PATH.add('/home/steven/projects/command-line-video-and-audio')
+
+xontrib load vox
+
+$PROMPT='\n\n{env_name}{GREEN}{user}@{hostname} {CYAN}{cwd}\n{DEFAULT}> '
+
+# Aliases
+
+# Source this one so that the cd command in script affects the
+# actual shell (rather than just the subsehll process which ends)
+aliases['mkproject'] = 'source mkproject'
+
+# ls aliases use exa
+aliases['ls'] = 'exa --icons'
+aliases['ll'] = 'exa --icons -alF'
+
+aliases['ra'] = 'ranger'
+
+aliases['pj'] = 'cd ~/projects'
+aliases['ve'] = 'cd ~/.virtualenvs'
+
+aliases['br'] = 'cd /mnt/c/Users/steve/Dropbox/projects/bibledriven.org'
+aliases['brc'] = 'cd /mnt/c/Users/steve/Dropbox/projects/bibledriven.org/content'
+
+aliases['bd'] = 'cd /mnt/c/Users/steve/Dropbox/projects/bibledocs.org'
+aliases['bdc'] = 'cd /mnt/c/Users/steve/Dropbox/projects/bibledocs.org/content'
+aliases['bdcs'] = 'cd /mnt/c/Users/steve/Dropbox/projects/bibledocs.org/content/slides'
+
+aliases['st'] = 'cd /mnt/c/Users/steve/Dropbox/projects/steventammen.com'
+aliases['stc'] = 'cd /mnt/c/Users/steve/Dropbox/projects/steventammen.com/content'
+aliases['stcs'] = 'cd /mnt/c/Users/steve/Dropbox/projects/steventammen.com/content/slides'
+
+aliases['cw'] = 'cd /mnt/c/Users/steve/Dropbox/projects/clockworkdesign.org'
+aliases['cwc'] = 'cd /mnt/c/Users/steve/Dropbox/projects/clockworkdesign.org/content'
+aliases['cwcs'] = 'cd /mnt/c/Users/steve/Dropbox/projects/clockworkdesign.org/content/slides'
+
+aliases['po'] = 'cd /mnt/c/Users/steve/Dropbox/projects/personal-organization'
+aliases['pobd'] = 'cd /mnt/c/Users/steve/Dropbox/projects/personal-organization/bibledocs.org'
+aliases['post'] = 'cd /mnt/c/Users/steve/Dropbox/projects/personal-organization/steventammen.com'
+aliases['pocw'] = 'cd /mnt/c/Users/steve/Dropbox/projects/personal-organization/clockworkdesign.org'

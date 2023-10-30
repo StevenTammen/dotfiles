@@ -1,0 +1,6 @@
+#!/usr/bin/env xonsh
+
+mkdir ~/projects/$ARG0
+vox new $ARG0
+vox workon $ARG0
+cd ~/projects/$ARG0
